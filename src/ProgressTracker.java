@@ -90,7 +90,7 @@ public class ProgressTracker extends JFrame {
         for (int i = 0; i < progressModel.size(); i++) {
             data.add(progressModel.getElementAt(i));
         }
-        DataManager.saveData(data, "progress_data.txt");
+        DataManager.saveToFile(data, "progress_data.txt");
     }
 
     private void loadProgressFromDisk() {
